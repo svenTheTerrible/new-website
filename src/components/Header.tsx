@@ -23,9 +23,15 @@ export function Header() {
         <span className="brand-score">{padded}</span>
       </div>
       <nav className="site-nav">
-        <a href="#about" className="nav-link">ABOUT</a>
-        <a href="#projects" className="nav-link">PROJECTS</a>
-        <a href="#resume" className="nav-link">RESUME</a>
+        <a href="#about" className="nav-link">
+          ABOUT
+        </a>
+        <a href="#projects" className="nav-link">
+          PROJECTS
+        </a>
+        <a href="#resume" className="nav-link">
+          RESUME
+        </a>
       </nav>
       <div className="credit-row">
         <span className="pixel-dot" />

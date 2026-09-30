@@ -6,12 +6,48 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
-  { stage: '01', title: 'DISTRIBUTED TASK QUEUE', description: 'High-throughput job scheduler processing 50k tasks/sec with at-least-once delivery.', tags: ['GO', 'gRPC', 'REDIS'] },
-  { stage: '02', title: 'REALTIME CHAT', description: 'Low-latency messaging with presence, typing indicators, and offline sync.', tags: ['TYPESCRIPT', 'REACT', 'WS'] },
-  { stage: '03', title: 'PAYMENTS API', description: 'PCI-aware payment orchestration with idempotent retries and double-entry ledgering.', tags: ['JAVA', 'SPRING', 'POSTGRES'] },
-  { stage: '04', title: 'ML FEATURE STORE', description: 'Online/offline feature serving with point-in-time correctness and low-latency reads.', tags: ['PYTHON', 'FASTAPI', 'KAFKA'] },
-  { stage: '05', title: 'DEVOPS DASHBOARD', description: 'Cluster health, deploy pipelines, and cost insights unified in a single pane.', tags: ['REACT', 'GO', 'K8S'] },
-  { stage: '06', title: 'OPEN SOURCE CLI', description: 'Developer tool with 2k+ stars for scaffolding production-ready microservices.', tags: ['GO', 'COBRA', 'OSS'] },
+  {
+    stage: '01',
+    title: 'DISTRIBUTED TASK QUEUE',
+    description:
+      'High-throughput job scheduler processing 50k tasks/sec with at-least-once delivery.',
+    tags: ['GO', 'gRPC', 'REDIS'],
+  },
+  {
+    stage: '02',
+    title: 'REALTIME CHAT',
+    description:
+      'Low-latency messaging with presence, typing indicators, and offline sync.',
+    tags: ['TYPESCRIPT', 'REACT', 'WS'],
+  },
+  {
+    stage: '03',
+    title: 'PAYMENTS API',
+    description:
+      'PCI-aware payment orchestration with idempotent retries and double-entry ledgering.',
+    tags: ['JAVA', 'SPRING', 'POSTGRES'],
+  },
+  {
+    stage: '04',
+    title: 'ML FEATURE STORE',
+    description:
+      'Online/offline feature serving with point-in-time correctness and low-latency reads.',
+    tags: ['PYTHON', 'FASTAPI', 'KAFKA'],
+  },
+  {
+    stage: '05',
+    title: 'DEVOPS DASHBOARD',
+    description:
+      'Cluster health, deploy pipelines, and cost insights unified in a single pane.',
+    tags: ['REACT', 'GO', 'K8S'],
+  },
+  {
+    stage: '06',
+    title: 'OPEN SOURCE CLI',
+    description:
+      'Developer tool with 2k+ stars for scaffolding production-ready microservices.',
+    tags: ['GO', 'COBRA', 'OSS'],
+  },
 ]
 
 function ProjectCard({ project }: { project: Project }) {
@@ -26,12 +62,18 @@ function ProjectCard({ project }: { project: Project }) {
         <p className="project-desc">{project.description}</p>
         <div className="project-tags">
           {project.tags.map((tag) => (
-            <span className="tag" key={tag}>{tag}</span>
+            <span className="tag" key={tag}>
+              {tag}
+            </span>
           ))}
         </div>
         <div className="project-links">
-          <a href="#" className="card-link">▶ DEMO</a>
-          <a href="#" className="card-link">{'</>'} CODE</a>
+          <a href="#" className="card-link">
+            ▶ DEMO
+          </a>
+          <a href="#" className="card-link">
+            {'</>'} CODE
+          </a>
         </div>
       </div>
     </article>
