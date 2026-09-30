@@ -19,7 +19,13 @@ export function Resume() {
         </a>
         <div className="social-links">
           {config.socials.map((link, index) => (
-            <a href={link.url} key={index} className="nav-link">
+            <a
+              href={link.url}
+              key={index}
+              className="nav-link"
+              target="_blank"
+              rel="noopener"
+            >
               {link.label}
             </a>
           ))}
