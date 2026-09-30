@@ -7,7 +7,7 @@
   --panel: #0b1320;
   --ink: #d6f3ff;
   --muted: #6f93a8;
-  --line: rgba(53, 231, 255, .18);
+  --line: rgba(53, 231, 255, 0.18);
   --glowmul: 1;
 }
 
@@ -55,31 +55,62 @@ html {
 }
 
 @keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 @keyframes drift {
-  to { background-position: 0 4px; }
+  to {
+    background-position: 0 4px;
+  }
 }
 @keyframes flicker {
-  0%, 100% { opacity: 1; }
-  48% { opacity: .92; }
-  50% { opacity: 1; }
-  52% { opacity: .96; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0.92;
+  }
+  50% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0.96;
+  }
 }
 @keyframes marquee {
-  to { transform: translateX(-50%); }
+  to {
+    transform: translateX(-50%);
+  }
 }
 @keyframes arrowb {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
 }
 @keyframes scangrid {
-  to { background-position: 0 60px; }
+  to {
+    background-position: 0 60px;
+  }
 }
 
 .site-header {
@@ -91,7 +122,7 @@ html {
   justify-content: space-between;
   gap: 18px;
   padding: 14px 22px;
-  background: rgba(5, 7, 13, .82);
+  background: rgba(5, 7, 13, 0.82);
   backdrop-filter: blur(6px);
   border-bottom: 2px solid var(--line);
 }
@@ -119,7 +150,9 @@ html {
   font-size: 10px;
   color: var(--ink);
   text-decoration: none;
-  transition: color .15s, text-shadow .15s;
+  transition:
+    color 0.15s,
+    text-shadow 0.15s;
 }
 .nav-link:hover {
   color: var(--glow);
@@ -157,10 +190,15 @@ html {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 60px),
-              repeating-linear-gradient(0deg, var(--line) 0 1px, transparent 1px 60px);
-  mask-image: linear-gradient(transparent 0%, rgb(0, 0, 0) 60%, transparent 100%);
-  opacity: .6;
+  background:
+    repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 60px),
+    repeating-linear-gradient(0deg, var(--line) 0 1px, transparent 1px 60px);
+  mask-image: linear-gradient(
+    transparent 0%,
+    rgb(0, 0, 0) 60%,
+    transparent 100%
+  );
+  opacity: 0.6;
   animation: scangrid 6s linear infinite;
 }
 .hero-sprite {
@@ -192,7 +230,9 @@ html {
   line-height: 1.25;
   letter-spacing: 2px;
   color: var(--ink);
-  text-shadow: 0 0 calc(18px * var(--glowmul)) var(--glow), 4px 4px 0 var(--glow2);
+  text-shadow:
+    0 0 calc(18px * var(--glowmul)) var(--glow),
+    4px 4px 0 var(--glow2);
 }
 .hero-role {
   font-family: 'Press Start 2P';
@@ -224,9 +264,20 @@ html {
   text-decoration: none;
   background: var(--glow);
   padding: 16px 22px;
-  clip-path: polygon(0px 6px, 6px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0px calc(100% - 6px));
+  clip-path: polygon(
+    0px 6px,
+    6px 0px,
+    calc(100% - 6px) 0px,
+    100% 6px,
+    100% calc(100% - 6px),
+    calc(100% - 6px) 100%,
+    6px 100%,
+    0px calc(100% - 6px)
+  );
   box-shadow: 6px 6px 0 0 var(--glow2);
-  transition: transform .08s, box-shadow .08s;
+  transition:
+    transform 0.08s,
+    box-shadow 0.08s;
 }
 .btn-primary:hover {
   transform: translateY(-2px);
@@ -249,8 +300,19 @@ html {
   background: transparent;
   border: 2px solid var(--glow);
   padding: 16px 22px;
-  clip-path: polygon(0px 6px, 6px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0px calc(100% - 6px));
-  transition: background .15s, color .15s;
+  clip-path: polygon(
+    0px 6px,
+    6px 0px,
+    calc(100% - 6px) 0px,
+    100% 6px,
+    100% calc(100% - 6px),
+    calc(100% - 6px) 100%,
+    6px 100%,
+    0px calc(100% - 6px)
+  );
+  transition:
+    background 0.15s,
+    color 0.15s;
 }
 .btn-outline:hover {
   background: var(--glow);
@@ -330,9 +392,24 @@ html {
 .photo-frame {
   width: 200px;
   height: 200px;
-  background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px);
+  background: repeating-linear-gradient(
+    45deg,
+    rgb(12, 22, 38) 0px,
+    rgb(12, 22, 38) 8px,
+    rgb(10, 18, 32) 8px,
+    rgb(10, 18, 32) 16px
+  );
   border: 2px solid var(--glow);
-  clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px));
+  clip-path: polygon(
+    0px 8px,
+    8px 0px,
+    calc(100% - 8px) 0px,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    0px calc(100% - 8px)
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -344,7 +421,7 @@ html {
   width: 4px;
   height: 4px;
   box-shadow: var(--sprite-sm);
-  opacity: .85;
+  opacity: 0.85;
 }
 .photo-tag {
   font-family: VT323;
@@ -398,7 +475,11 @@ html {
 }
 .stat-fill {
   height: 100%;
-  background: repeating-linear-gradient(90deg, var(--glow) 0 12px, transparent 12px 16px);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--glow) 0 12px,
+    transparent 12px 16px
+  );
   box-shadow: 0 0 calc(8px * var(--glowmul)) var(--glow);
 }
 .stat-level {
@@ -417,10 +498,10 @@ html {
   color: var(--glow);
   border: 2px solid var(--line);
   padding: 9px 10px;
-  transition: .15s;
+  transition: 0.15s;
 }
 .skill:hover {
-  background: rgba(53, 231, 255, .14);
+  background: rgba(53, 231, 255, 0.14);
   box-shadow: 0 0 8px var(--glow);
 }
 
@@ -432,10 +513,22 @@ html {
 .project-card {
   background: var(--panel);
   border: 2px solid var(--line);
-  clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px));
+  clip-path: polygon(
+    0px 8px,
+    8px 0px,
+    calc(100% - 8px) 0px,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    0px calc(100% - 8px)
+  );
   display: flex;
   flex-direction: column;
-  transition: transform .18s, filter .18s, border-color .18s;
+  transition:
+    transform 0.18s,
+    filter 0.18s,
+    border-color 0.18s;
 }
 .project-card:hover {
   transform: translateY(-4px);
@@ -445,7 +538,13 @@ html {
 .project-art {
   position: relative;
   aspect-ratio: 16 / 10;
-  background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px);
+  background: repeating-linear-gradient(
+    45deg,
+    rgb(12, 22, 38) 0px,
+    rgb(12, 22, 38) 8px,
+    rgb(10, 18, 32) 8px,
+    rgb(10, 18, 32) 16px
+  );
   border-bottom: 2px solid var(--line);
   display: flex;
   align-items: center;
@@ -465,7 +564,7 @@ html {
   width: 4px;
   height: 4px;
   box-shadow: var(--sprite-sm);
-  opacity: .5;
+  opacity: 0.5;
   transform: scale(1.4);
 }
 .project-body {
@@ -513,7 +612,7 @@ html {
   font-size: 9px;
   color: var(--ink);
   text-decoration: none;
-  transition: color .15s;
+  transition: color 0.15s;
 }
 .card-link:hover {
   color: var(--glow);
@@ -532,7 +631,16 @@ html {
 .resume-card {
   background: var(--panel);
   border: 2px solid var(--glow);
-  clip-path: polygon(0px 10px, 10px 0px, calc(100% - 10px) 0px, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0px calc(100% - 10px));
+  clip-path: polygon(
+    0px 10px,
+    10px 0px,
+    calc(100% - 10px) 0px,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0px calc(100% - 10px)
+  );
   padding: 54px 30px;
   display: flex;
   flex-direction: column;
@@ -600,14 +708,22 @@ html {
   inset: 0;
   z-index: 60;
   pointer-events: none;
-  background: repeating-linear-gradient(rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, .3) 2px, rgba(0, 0, 0, .3) 4px) 0% 0% / 100% 4px;
+  background: repeating-linear-gradient(
+      rgba(0, 0, 0, 0) 0px,
+      rgba(0, 0, 0, 0) 2px,
+      rgba(0, 0, 0, 0.3) 2px,
+      rgba(0, 0, 0, 0.3) 4px
+    )
+    0% 0% / 100% 4px;
   mix-blend-mode: multiply;
-  animation: drift .5s steps(2) infinite, flicker 4s ease infinite;
+  animation:
+    drift 0.5s steps(2) infinite,
+    flicker 4s ease infinite;
 }
 .vignette {
   position: fixed;
   inset: 0;
   z-index: 59;
   pointer-events: none;
-  background: radial-gradient(transparent 52%, rgba(0, 0, 0, .6) 100%);
+  background: radial-gradient(transparent 52%, rgba(0, 0, 0, 0.6) 100%);
 }

@@ -9,6 +9,8 @@ import { ThemeHost } from './components/ThemeHost'
 import './styles/portfolio.css'
 
 export default function App() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <>
       <ThemeHost>
@@ -21,7 +23,9 @@ export default function App() {
       </ThemeHost>
       <Scanlines />
       <footer className="site-footer">
-        <span className="footer-text">© 2026 YOUR_NAME — BUILT WITH PIXELS</span>
+        <span className="footer-text">
+          © {currentYear} SVEN STAFFL — BUILT WITH PIXELS
+        </span>
       </footer>
     </>
   )

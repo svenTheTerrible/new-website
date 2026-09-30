@@ -2,7 +2,13 @@ import { useEffect, useRef } from 'react'
 import type { ReactNode } from 'react'
 import { buildSprite } from './theme'
 
-export function ThemeHost({ glowStrength = 1, children }: { glowStrength?: number; children: ReactNode }) {
+export function ThemeHost({
+  glowStrength = 1,
+  children,
+}: {
+  glowStrength?: number
+  children: ReactNode
+}) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -13,5 +19,9 @@ export function ThemeHost({ glowStrength = 1, children }: { glowStrength?: numbe
     el.style.setProperty('--sprite-sm', buildSprite(4))
   }, [glowStrength])
 
-  return <div className="theme-host" ref={ref}>{children}</div>
+  return (
+    <div className="theme-host" ref={ref}>
+      {children}
+    </div>
+  )
 }
