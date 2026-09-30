@@ -18,14 +18,30 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
-        <div className="project-links">
-          <a href="#" className="card-link">
-            ▶ DEMO
-          </a>
-          <a href="#" className="card-link">
-            {'</>'} CODE
-          </a>
-        </div>
+        {(project.demo || project.code) && (
+          <div className="project-links">
+            {project.demo && (
+              <a
+                href={project.demo}
+                className="card-link"
+                target="_blank"
+                rel="noopener"
+              >
+                ▶ DEMO
+              </a>
+            )}
+            {project.code && (
+              <a
+                href={project.code}
+                className="card-link"
+                target="_blank"
+                rel="noopener"
+              >
+                {'</>'} CODE
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </article>
   )

@@ -9,6 +9,8 @@ export interface Project {
   title: string
   description: string
   tags: string[]
+  demo?: string
+  code?: string
 }
 
 export interface SocialLink {

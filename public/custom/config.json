@@ -24,37 +24,46 @@
       "stage": "01",
       "title": "DISTRIBUTED TASK QUEUE",
       "description": "High-throughput job scheduler processing 50k tasks/sec with at-least-once delivery.",
-      "tags": ["GO", "gRPC", "REDIS"]
+      "tags": ["GO", "gRPC", "REDIS"],
+      "code": "https://github.com/"
     },
     {
       "stage": "02",
       "title": "REALTIME CHAT",
       "description": "Low-latency messaging with presence, typing indicators, and offline sync.",
-      "tags": ["TYPESCRIPT", "REACT", "WS"]
+      "tags": ["TYPESCRIPT", "REACT", "WS"],
+      "demo": "https://",
+      "code": "https://github.com/"
     },
     {
       "stage": "03",
       "title": "PAYMENTS API",
       "description": "PCI-aware payment orchestration with idempotent retries and double-entry ledgering.",
-      "tags": ["JAVA", "SPRING", "POSTGRES"]
+      "tags": ["JAVA", "SPRING", "POSTGRES"],
+      "code": "https://github.com/"
     },
     {
       "stage": "04",
       "title": "ML FEATURE STORE",
       "description": "Online/offline feature serving with point-in-time correctness and low-latency reads.",
-      "tags": ["PYTHON", "FASTAPI", "KAFKA"]
+      "tags": ["PYTHON", "FASTAPI", "KAFKA"],
+      "code": "https://github.com/"
     },
     {
       "stage": "05",
       "title": "DEVOPS DASHBOARD",
       "description": "Cluster health, deploy pipelines, and cost insights unified in a single pane.",
-      "tags": ["REACT", "GO", "K8S"]
+      "tags": ["REACT", "GO", "K8S"],
+      "demo": "https://",
+      "code": "https://github.com/"
     },
     {
       "stage": "06",
       "title": "OPEN SOURCE CLI",
       "description": "Developer tool with 2k+ stars for scaffolding production-ready microservices.",
-      "tags": ["GO", "COBRA", "OSS"]
+      "tags": ["GO", "COBRA", "OSS"],
+      "demo": "https://",
+      "code": "https://github.com/"
     }
   ],
   "socials": [
