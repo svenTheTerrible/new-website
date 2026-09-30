@@ -53,7 +53,7 @@ function AppInner() {
   return <AppBody config={config} />
 }
 
-export default function App() {
+export function App() {
   return (
     <ConfigProvider>
       <AppInner />
