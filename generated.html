@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .sc-placeholder{background:rgba(255,255,255,.3);border:1px solid rgba(0,0,0,.5);
+      border-radius:2px;box-sizing:border-box;overflow:hidden}
+    @keyframes sc-shine{0%{background-position:100% 50%}100%{background-position:0% 50%}}
+    html.sc-dc-streaming .sc-placeholder,
+    html.sc-dc-streaming .sc-interp.sc-missing{position:relative;
+      background:color-mix(in srgb,currentColor 5%,transparent);
+      border-color:transparent}
+    html.sc-dc-streaming .sc-placeholder::before,
+    html.sc-dc-streaming .sc-interp.sc-missing::before{content:'';
+      position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(90deg,rgba(217,119,87,0) 25%,rgba(247,225,211,.95) 37%,rgba(217,119,87,0) 63%);
+      background-size:400% 100%;animation:sc-shine 1.4s ease infinite}
+    html.sc-dc-streaming .sc-placeholder:nth-child(n+9 of .sc-placeholder)::before,
+    html.sc-dc-streaming .sc-interp.sc-missing:nth-child(n+9 of .sc-interp.sc-missing)::before{animation:none;
+      background:color-mix(in srgb,currentColor 8%,transparent)}
+    .sc-placeholder-error{padding:4px 8px;font:11px/1.4 ui-monospace,monospace;
+      color:rgba(0,0,0,.7);word-break:break-word}
+    .sc-interp.sc-missing{display:inline-block;width:2em;height:1em;overflow:hidden;
+      vertical-align:text-bottom;background:rgba(255,255,255,.3);border:1px solid rgba(0,0,0,.5);
+      border-radius:2px;box-sizing:border-box;color:transparent;
+      user-select:none}
+    .sc-interp.sc-unresolved{font-family:ui-monospace,monospace;font-size:.85em;
+      color:rgba(0,0,0,.5);background:rgba(0,0,0,.05);border-radius:3px;
+      padding:0 3px}
+    .sc-host.sc-has-error{position:relative}
+    .sc-logic-error{position:absolute;top:8px;left:8px;z-index:2147483647;max-width:60ch;
+      padding:6px 10px;background:#b00020;color:#fff;font:12px/1.4 ui-monospace,monospace;
+      border-radius:4px;white-space:pre-wrap;pointer-events:none}
+    /* Mirrors PRINT_BASELINE_CSS in apps/web deck-stage-export.ts — keep both
+       in sync until dc-runtime regains a build step. */
+    @media print {
+      @page { margin: 0.5cm; }
+      section, article, figure, table { break-inside: avoid; }
+      *, *::before, *::after {
+        print-color-adjust: exact; -webkit-print-color-adjust: exact;
+        backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+        animation-delay: -99s !important; animation-duration: .001s !important;
+        animation-iteration-count: 1 !important; animation-fill-mode: both !important;
+        animation-play-state: running !important; transition-duration: 0s !important;
+      }
+    }
+  </style><script>window.__resources = {};</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="blob:null/6344cd7a-9036-474f-8b8d-31c9c2f6cdaf"></script>
+<style>x-dc{display:none!important}</style><script src="./Pixel Portfolio (standalone)_files/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script><script src="./Pixel Portfolio (standalone)_files/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script><style></style><style>html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}</style><link rel="preconnect" href="https://fonts.googleapis.com/" data-dc-tpl="1"><link rel="preconnect" href="https://fonts.gstatic.com/" data-dc-tpl="2"><style data-dc-tpl="3">/* cyrillic-ext */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/335ccd52-2c50-4d7f-b8ec-41b3e7c1ca3b") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/7c015aeb-7988-4ea3-989b-5b4aa4b901ab") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/f36e0a6d-a059-481d-8a70-8a1143dfded1") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/e7a9feb5-bb57-45f0-b3ff-703df130df89") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/0c58bae5-6e67-469b-ba2a-1bbd213a5075") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/617046e8-dfd1-432e-a296-4abf1c207f70") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/a5b9d060-b954-4d2d-9c01-e8d6fc291cdf") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("blob:null/7906fc3c-933b-4053-8d76-3ae84109c019") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style><style data-dc-tpl="4">
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#05070d;}
+  ::selection{background:#35e7ff;color:#05070d;}
+  ::-webkit-scrollbar{width:12px;height:12px;}
+  ::-webkit-scrollbar-track{background:#05070d;}
+  ::-webkit-scrollbar-thumb{background:#1a3a4a;border:2px solid #05070d;}
+  @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  @keyframes drift{to{background-position:0 4px}}
+  @keyframes flicker{0%,100%{opacity:1}48%{opacity:.92}50%{opacity:1}52%{opacity:.96}}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+  @keyframes arrowb{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+  @keyframes scangrid{to{background-position:0 60px}}
+</style></head>
+<body>
+<div id="dc-root"><div class="sc-host" data-sc-name="Pixel Portfolio (standalone)"><div data-dc-tpl="5" style="--glow: #35e7ff; --glow2: #2b6bff; --bg: #05070d; --panel: #0b1320; --ink: #d6f3ff; --muted: #6f93a8; --line: rgba(53,231,255,.18); --glowmul: 1; --sprite: 14px 0px 0 0 var(--glow),56px 0px 0 0 var(--glow),21px 7px 0 0 var(--glow),49px 7px 0 0 var(--glow),14px 14px 0 0 var(--glow),21px 14px 0 0 var(--glow),28px 14px 0 0 var(--glow),35px 14px 0 0 var(--glow),42px 14px 0 0 var(--glow),49px 14px 0 0 var(--glow),56px 14px 0 0 var(--glow),7px 21px 0 0 var(--glow),14px 21px 0 0 var(--glow),28px 21px 0 0 var(--glow),35px 21px 0 0 var(--glow),42px 21px 0 0 var(--glow),56px 21px 0 0 var(--glow),63px 21px 0 0 var(--glow),0px 28px 0 0 var(--glow),7px 28px 0 0 var(--glow),14px 28px 0 0 var(--glow),21px 28px 0 0 var(--glow),28px 28px 0 0 var(--glow),35px 28px 0 0 var(--glow),42px 28px 0 0 var(--glow),49px 28px 0 0 var(--glow),56px 28px 0 0 var(--glow),63px 28px 0 0 var(--glow),70px 28px 0 0 var(--glow),0px 35px 0 0 var(--glow),14px 35px 0 0 var(--glow),21px 35px 0 0 var(--glow),28px 35px 0 0 var(--glow),35px 35px 0 0 var(--glow),42px 35px 0 0 var(--glow),49px 35px 0 0 var(--glow),56px 35px 0 0 var(--glow),70px 35px 0 0 var(--glow),0px 42px 0 0 var(--glow),14px 42px 0 0 var(--glow),56px 42px 0 0 var(--glow),70px 42px 0 0 var(--glow),21px 49px 0 0 var(--glow),28px 49px 0 0 var(--glow),42px 49px 0 0 var(--glow),49px 49px 0 0 var(--glow); --sprite-sm: 8px 0px 0 0 var(--glow),32px 0px 0 0 var(--glow),12px 4px 0 0 var(--glow),28px 4px 0 0 var(--glow),8px 8px 0 0 var(--glow),12px 8px 0 0 var(--glow),16px 8px 0 0 var(--glow),20px 8px 0 0 var(--glow),24px 8px 0 0 var(--glow),28px 8px 0 0 var(--glow),32px 8px 0 0 var(--glow),4px 12px 0 0 var(--glow),8px 12px 0 0 var(--glow),16px 12px 0 0 var(--glow),20px 12px 0 0 var(--glow),24px 12px 0 0 var(--glow),32px 12px 0 0 var(--glow),36px 12px 0 0 var(--glow),0px 16px 0 0 var(--glow),4px 16px 0 0 var(--glow),8px 16px 0 0 var(--glow),12px 16px 0 0 var(--glow),16px 16px 0 0 var(--glow),20px 16px 0 0 var(--glow),24px 16px 0 0 var(--glow),28px 16px 0 0 var(--glow),32px 16px 0 0 var(--glow),36px 16px 0 0 var(--glow),40px 16px 0 0 var(--glow),0px 20px 0 0 var(--glow),8px 20px 0 0 var(--glow),12px 20px 0 0 var(--glow),16px 20px 0 0 var(--glow),20px 20px 0 0 var(--glow),24px 20px 0 0 var(--glow),28px 20px 0 0 var(--glow),32px 20px 0 0 var(--glow),40px 20px 0 0 var(--glow),0px 24px 0 0 var(--glow),8px 24px 0 0 var(--glow),32px 24px 0 0 var(--glow),40px 24px 0 0 var(--glow),12px 28px 0 0 var(--glow),16px 28px 0 0 var(--glow),24px 28px 0 0 var(--glow),28px 28px 0 0 var(--glow); background: var(--bg); color: var(--ink); font-family: VT323, monospace; min-height: 100vh; overflow-x: hidden; position: relative;">
+
+  <header data-dc-tpl="6" style="position: sticky; top: 0px; z-index: 55; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 14px 22px; background: rgba(5, 7, 13, 0.82); backdrop-filter: blur(6px); border-bottom: 2px solid var(--line);">
+    <div data-dc-tpl="7" style="display: flex; align-items: center; gap: 14px; font-family: &quot;Press Start 2P&quot;; font-size: 10px;">
+      <span data-dc-tpl="8" style="color: var(--glow); text-shadow: 0 0 calc(8px*var(--glowmul)) var(--glow);">1UP</span>
+      <span data-dc-tpl="9" style="color: var(--ink); letter-spacing: 1px;">00013450</span>
+    </div>
+    <nav data-dc-tpl="10" style="display: flex; gap: 22px;">
+      <a data-dc-tpl="11" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#about" class="scp0" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--ink); text-decoration: none; transition: color 0.15s, text-shadow 0.15s;">ABOUT</a>
+      <a data-dc-tpl="12" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#projects" class="scp0" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--ink); text-decoration: none; transition: color 0.15s, text-shadow 0.15s;">PROJECTS</a>
+      <a data-dc-tpl="13" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#resume" class="scp0" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--ink); text-decoration: none; transition: color 0.15s, text-shadow 0.15s;">RESUME</a>
+    </nav>
+    <div data-dc-tpl="14" style="display: flex; align-items: center; gap: 14px;">
+      <div data-dc-tpl="15" style="display: flex; gap: 6px;">
+        <span data-dc-tpl="16" style="width: 11px; height: 11px; background: var(--glow); box-shadow: 0 0 8px var(--glow);"></span>
+        <span data-dc-tpl="17" style="width: 11px; height: 11px; background: var(--glow); box-shadow: 0 0 8px var(--glow);"></span>
+        <span data-dc-tpl="18" style="width: 11px; height: 11px; background: var(--glow); box-shadow: 0 0 8px var(--glow);"></span>
+      </div>
+      <span data-dc-tpl="19" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--muted);">CREDIT 02</span>
+    </div>
+  </header>
+
+  <section data-dc-tpl="20" style="position: relative; min-height: calc(-58px + 100vh); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; padding: 70px 22px; overflow: hidden;">
+    <div data-dc-tpl="21" style="position: absolute; inset: 0px; z-index: 0; background: repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 60px), repeating-linear-gradient(0deg,var(--line) 0 1px,transparent 1px 60px); mask-image: linear-gradient(transparent 0%, rgb(0, 0, 0) 60%, transparent 100%); opacity: 0.6; animation: 6s linear 0s infinite normal none running scangrid;"></div>
+
+    <div data-dc-tpl="22" style="position: relative; z-index: 1; height: 62px; width: 84px; animation: 2.6s ease-in-out 0s infinite normal none running bob; filter: drop-shadow(0 0 calc(14px*var(--glowmul)) var(--glow));">
+      <div data-dc-tpl="23" style="width: 7px; height: 7px; box-shadow: var(--sprite);"></div>
+    </div>
+
+    <div data-dc-tpl="24" style="position: relative; z-index: 1; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px;">
+      <h1 data-dc-tpl="25" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: clamp(26px, 6.4vw, 62px); line-height: 1.25; letter-spacing: 2px; color: var(--ink); text-shadow: 0 0 calc(18px*var(--glowmul)) var(--glow), 4px 4px 0 var(--glow2);">YOUR&nbsp;NAME</h1>
+      <div data-dc-tpl="26" style="font-family: &quot;Press Start 2P&quot;; font-size: clamp(12px, 2.4vw, 18px); color: var(--glow); text-shadow: 0 0 calc(10px*var(--glowmul)) var(--glow); letter-spacing: 2px;">FULLSTACK ENGINEER</div>
+      <div data-dc-tpl="27" style="font-family: VT323; font-size: clamp(20px, 3vw, 26px); color: var(--muted); letter-spacing: 1px;">Java &nbsp;·&nbsp; Go &nbsp;·&nbsp; Python &nbsp;·&nbsp; React &nbsp;·&nbsp; TypeScript</div>
+    </div>
+
+    <div data-dc-tpl="28" style="position: relative; z-index: 1; display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; margin-top: 6px;">
+      <a data-dc-tpl="29" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#projects" class="scp1 scp2" style="font-family: &quot;Press Start 2P&quot;; font-size: 12px; color: rgb(5, 7, 13); background: var(--glow); padding: 16px 22px; text-decoration: none; clip-path: polygon(0px 6px, 6px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0px calc(100% - 6px)); box-shadow: 6px 6px 0 0 var(--glow2); transition: transform 0.08s, box-shadow 0.08s;">▶ VIEW PROJECTS</a>
+      <a data-dc-tpl="30" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#resume" class="scp3" style="font-family: &quot;Press Start 2P&quot;; font-size: 12px; color: var(--glow); background: transparent; border: 2px solid var(--glow); padding: 16px 22px; text-decoration: none; clip-path: polygon(0px 6px, 6px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0px calc(100% - 6px)); transition: background 0.15s, color 0.15s;">⬇ RESUME</a>
+    </div>
+
+    <div data-dc-tpl="31" style="position: relative; z-index: 1; font-family: &quot;Press Start 2P&quot;; font-size: 11px; color: var(--glow); animation: 1s steps(1) 0s infinite normal none running blink; margin-top: 8px;">▸ PRESS START</div>
+
+    <div data-dc-tpl="32" style="position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 1; font-family: &quot;Press Start 2P&quot;; font-size: 14px; color: var(--muted); animation: 1.6s ease-in-out 0s infinite normal none running arrowb;">▼</div>
+  </section>
+
+  <section data-dc-tpl="33" id="about" style="position: relative; z-index: 1; max-width: 1080px; margin: 0px auto; padding: 90px 22px; scroll-margin-top: 70px;">
+    <div data-dc-tpl="34" style="display: flex; align-items: center; gap: 16px; margin-bottom: 40px;">
+      <span data-dc-tpl="35" style="font-family: &quot;Press Start 2P&quot;; font-size: clamp(15px, 3vw, 20px); color: var(--glow); text-shadow: 0 0 calc(10px*var(--glowmul)) var(--glow);">// ABOUT_ME</span>
+      <span data-dc-tpl="36" style="flex: 1 1 0%; height: 2px; background: var(--line);"></span>
+    </div>
+
+    <div data-dc-tpl="37" style="display: flex; flex-wrap: wrap; gap: 48px;">
+      <div data-dc-tpl="38" style="flex: 0 0 200px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+        <div data-dc-tpl="39" style="width: 200px; height: 200px; background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px); border: 2px solid var(--glow); clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px)); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; filter: drop-shadow(0 0 calc(14px*var(--glowmul)) var(--glow));">
+          <div data-dc-tpl="40" style="width: 4px; height: 4px; box-shadow: var(--sprite-sm); opacity: 0.85;"></div>
+          <span data-dc-tpl="41" style="font-family: VT323; font-size: 17px; color: var(--muted); letter-spacing: 1px;">DROP_PHOTO.PNG</span>
+        </div>
+        <div data-dc-tpl="42" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); text-align: center; line-height: 1.7;">PLAYER 01<br data-dc-tpl="43"><span data-dc-tpl="44" style="color: var(--muted);">YOUR NAME</span></div>
+      </div>
+
+      <div data-dc-tpl="45" style="flex: 1 1 0%; min-width: 300px; display: flex; flex-direction: column; gap: 26px;">
+        <div data-dc-tpl="46" style="display: flex; flex-direction: column; gap: 14px;">
+          <p data-dc-tpl="47" style="margin: 0px; font-family: VT323; font-size: 22px; line-height: 1.32; color: var(--ink);">I'm a fullstack engineer who ships resilient backends in <b data-dc-tpl="48" style="color: var(--glow);">Java, Go &amp; Python</b> and crafts fast, fully-typed frontends in <b data-dc-tpl="49" style="color: var(--glow);">React + TypeScript</b>. I like clean APIs, observable systems, and interfaces that feel instant.</p>
+          <p data-dc-tpl="50" style="margin: 0px; font-family: VT323; font-size: 22px; line-height: 1.32; color: var(--muted);">From distributed queues to realtime UIs — I take features from schema to ship. Currently leveling up and looking for the next co-op.</p>
+        </div>
+
+        <div data-dc-tpl="51" style="display: flex; flex-direction: column; gap: 12px;">
+          <span data-dc-tpl="52" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--muted); letter-spacing: 1px;">▸ STATS</span>
+          <div data-dc-tpl="53" style="display: flex; align-items: center; gap: 14px;"><span data-dc-tpl="54" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; width: 108px; color: var(--ink);">BACKEND</span><div data-dc-tpl="55" style="flex: 1 1 0%; height: 18px; border: 2px solid var(--line); padding: 2px;"><div data-dc-tpl="56" style="height: 100%; width: 94%; background: repeating-linear-gradient(90deg,var(--glow) 0 12px,transparent 12px 16px); box-shadow: 0 0 calc(8px*var(--glowmul)) var(--glow);"></div></div><span data-dc-tpl="57" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow);">Lv.9</span></div>
+          <div data-dc-tpl="58" style="display: flex; align-items: center; gap: 14px;"><span data-dc-tpl="59" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; width: 108px; color: var(--ink);">FRONTEND</span><div data-dc-tpl="60" style="flex: 1 1 0%; height: 18px; border: 2px solid var(--line); padding: 2px;"><div data-dc-tpl="61" style="height: 100%; width: 85%; background: repeating-linear-gradient(90deg,var(--glow) 0 12px,transparent 12px 16px); box-shadow: 0 0 calc(8px*var(--glowmul)) var(--glow);"></div></div><span data-dc-tpl="62" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow);">Lv.8</span></div>
+          <div data-dc-tpl="63" style="display: flex; align-items: center; gap: 14px;"><span data-dc-tpl="64" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; width: 108px; color: var(--ink);">DEVOPS</span><div data-dc-tpl="65" style="flex: 1 1 0%; height: 18px; border: 2px solid var(--line); padding: 2px;"><div data-dc-tpl="66" style="height: 100%; width: 72%; background: repeating-linear-gradient(90deg,var(--glow) 0 12px,transparent 12px 16px); box-shadow: 0 0 calc(8px*var(--glowmul)) var(--glow);"></div></div><span data-dc-tpl="67" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow);">Lv.7</span></div>
+          <div data-dc-tpl="68" style="display: flex; align-items: center; gap: 14px;"><span data-dc-tpl="69" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; width: 108px; color: var(--ink);">DATABASES</span><div data-dc-tpl="70" style="flex: 1 1 0%; height: 18px; border: 2px solid var(--line); padding: 2px;"><div data-dc-tpl="71" style="height: 100%; width: 80%; background: repeating-linear-gradient(90deg,var(--glow) 0 12px,transparent 12px 16px); box-shadow: 0 0 calc(8px*var(--glowmul)) var(--glow);"></div></div><span data-dc-tpl="72" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow);">Lv.8</span></div>
+        </div>
+
+        <div data-dc-tpl="73" style="display: flex; flex-direction: column; gap: 12px;">
+          <span data-dc-tpl="74" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--muted); letter-spacing: 1px;">▸ INVENTORY</span>
+          <div data-dc-tpl="75" style="display: flex; flex-wrap: wrap; gap: 9px;">
+            <span data-dc-tpl="76" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">JAVA</span>
+            <span data-dc-tpl="77" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">GO</span>
+            <span data-dc-tpl="78" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">PYTHON</span>
+            <span data-dc-tpl="79" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">REACT</span>
+            <span data-dc-tpl="80" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">TYPESCRIPT</span>
+            <span data-dc-tpl="81" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">POSTGRES</span>
+            <span data-dc-tpl="82" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">DOCKER</span>
+            <span data-dc-tpl="83" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">KUBERNETES</span>
+            <span data-dc-tpl="84" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">REDIS</span>
+            <span data-dc-tpl="85" class="scp4" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); border: 2px solid var(--line); padding: 9px 10px; transition: 0.15s;">gRPC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-dc-tpl="86" id="projects" style="position: relative; z-index: 1; max-width: 1080px; margin: 0px auto; padding: 50px 22px 90px; scroll-margin-top: 70px;">
+    <div data-dc-tpl="87" style="display: flex; align-items: center; gap: 16px; margin-bottom: 38px;">
+      <span data-dc-tpl="88" style="font-family: &quot;Press Start 2P&quot;; font-size: clamp(15px, 3vw, 20px); color: var(--glow); text-shadow: 0 0 calc(10px*var(--glowmul)) var(--glow);">// PROJECTS</span>
+      <span data-dc-tpl="89" style="flex: 1 1 0%; height: 2px; background: var(--line);"></span>
+      <span data-dc-tpl="90" style="font-family: VT323; font-size: 20px; color: var(--muted);">▸ SELECT A STAGE</span>
+    </div>
+
+    <div data-dc-tpl="91" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
+
+      <article data-dc-tpl="92" class="scp5" style="background: var(--panel); border: 2px solid var(--line); clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px)); display: flex; flex-direction: column; transition: transform 0.18s, filter 0.18s, border-color 0.18s;">
+        <div data-dc-tpl="93" style="position: relative; aspect-ratio: 16 / 10; background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px); border-bottom: 2px solid var(--line); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <span data-dc-tpl="94" style="position: absolute; top: 10px; left: 12px; font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); text-shadow: 0 0 8px var(--glow);">STAGE 01</span>
+          <div data-dc-tpl="95" style="width: 4px; height: 4px; box-shadow: var(--sprite-sm); opacity: 0.5; transform: scale(1.4);"></div>
+        </div>
+        <div data-dc-tpl="96" style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1 1 0%;">
+          <h3 data-dc-tpl="97" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: 13px; line-height: 1.55; color: var(--ink);">DISTRIBUTED TASK QUEUE</h3>
+          <p data-dc-tpl="98" style="margin: 0px; font-family: VT323; font-size: 19px; line-height: 1.22; color: var(--muted);">High-throughput job scheduler processing 50k tasks/sec with at-least-once delivery.</p>
+          <div data-dc-tpl="99" style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto;"><span data-dc-tpl="100" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">GO</span><span data-dc-tpl="101" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">gRPC</span><span data-dc-tpl="102" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">REDIS</span></div>
+          <div data-dc-tpl="103" style="display: flex; gap: 18px; border-top: 2px solid var(--line); padding-top: 14px;"><a data-dc-tpl="104" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">▶ DEMO</a><a data-dc-tpl="105" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">&lt;/&gt; CODE</a></div>
+        </div>
+      </article>
+
+      <article data-dc-tpl="106" class="scp5" style="background: var(--panel); border: 2px solid var(--line); clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px)); display: flex; flex-direction: column; transition: transform 0.18s, filter 0.18s, border-color 0.18s;">
+        <div data-dc-tpl="107" style="position: relative; aspect-ratio: 16 / 10; background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px); border-bottom: 2px solid var(--line); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <span data-dc-tpl="108" style="position: absolute; top: 10px; left: 12px; font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); text-shadow: 0 0 8px var(--glow);">STAGE 02</span>
+          <div data-dc-tpl="109" style="width: 4px; height: 4px; box-shadow: var(--sprite-sm); opacity: 0.5; transform: scale(1.4);"></div>
+        </div>
+        <div data-dc-tpl="110" style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1 1 0%;">
+          <h3 data-dc-tpl="111" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: 13px; line-height: 1.55; color: var(--ink);">REALTIME CHAT</h3>
+          <p data-dc-tpl="112" style="margin: 0px; font-family: VT323; font-size: 19px; line-height: 1.22; color: var(--muted);">Low-latency messaging with presence, typing indicators, and offline sync.</p>
+          <div data-dc-tpl="113" style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto;"><span data-dc-tpl="114" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">TYPESCRIPT</span><span data-dc-tpl="115" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">REACT</span><span data-dc-tpl="116" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">WS</span></div>
+          <div data-dc-tpl="117" style="display: flex; gap: 18px; border-top: 2px solid var(--line); padding-top: 14px;"><a data-dc-tpl="118" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">▶ DEMO</a><a data-dc-tpl="119" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">&lt;/&gt; CODE</a></div>
+        </div>
+      </article>
+
+      <article data-dc-tpl="120" class="scp5" style="background: var(--panel); border: 2px solid var(--line); clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px)); display: flex; flex-direction: column; transition: transform 0.18s, filter 0.18s, border-color 0.18s;">
+        <div data-dc-tpl="121" style="position: relative; aspect-ratio: 16 / 10; background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px); border-bottom: 2px solid var(--line); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <span data-dc-tpl="122" style="position: absolute; top: 10px; left: 12px; font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); text-shadow: 0 0 8px var(--glow);">STAGE 03</span>
+          <div data-dc-tpl="123" style="width: 4px; height: 4px; box-shadow: var(--sprite-sm); opacity: 0.5; transform: scale(1.4);"></div>
+        </div>
+        <div data-dc-tpl="124" style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1 1 0%;">
+          <h3 data-dc-tpl="125" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: 13px; line-height: 1.55; color: var(--ink);">PAYMENTS API</h3>
+          <p data-dc-tpl="126" style="margin: 0px; font-family: VT323; font-size: 19px; line-height: 1.22; color: var(--muted);">PCI-aware payment orchestration with idempotent retries and double-entry ledgering.</p>
+          <div data-dc-tpl="127" style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto;"><span data-dc-tpl="128" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">JAVA</span><span data-dc-tpl="129" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">SPRING</span><span data-dc-tpl="130" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">POSTGRES</span></div>
+          <div data-dc-tpl="131" style="display: flex; gap: 18px; border-top: 2px solid var(--line); padding-top: 14px;"><a data-dc-tpl="132" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">▶ DEMO</a><a data-dc-tpl="133" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">&lt;/&gt; CODE</a></div>
+        </div>
+      </article>
+
+      <article data-dc-tpl="134" class="scp5" style="background: var(--panel); border: 2px solid var(--line); clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px)); display: flex; flex-direction: column; transition: transform 0.18s, filter 0.18s, border-color 0.18s;">
+        <div data-dc-tpl="135" style="position: relative; aspect-ratio: 16 / 10; background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px); border-bottom: 2px solid var(--line); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <span data-dc-tpl="136" style="position: absolute; top: 10px; left: 12px; font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); text-shadow: 0 0 8px var(--glow);">STAGE 04</span>
+          <div data-dc-tpl="137" style="width: 4px; height: 4px; box-shadow: var(--sprite-sm); opacity: 0.5; transform: scale(1.4);"></div>
+        </div>
+        <div data-dc-tpl="138" style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1 1 0%;">
+          <h3 data-dc-tpl="139" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: 13px; line-height: 1.55; color: var(--ink);">ML FEATURE STORE</h3>
+          <p data-dc-tpl="140" style="margin: 0px; font-family: VT323; font-size: 19px; line-height: 1.22; color: var(--muted);">Online/offline feature serving with point-in-time correctness and low-latency reads.</p>
+          <div data-dc-tpl="141" style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto;"><span data-dc-tpl="142" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">PYTHON</span><span data-dc-tpl="143" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">FASTAPI</span><span data-dc-tpl="144" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">KAFKA</span></div>
+          <div data-dc-tpl="145" style="display: flex; gap: 18px; border-top: 2px solid var(--line); padding-top: 14px;"><a data-dc-tpl="146" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">▶ DEMO</a><a data-dc-tpl="147" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">&lt;/&gt; CODE</a></div>
+        </div>
+      </article>
+
+      <article data-dc-tpl="148" class="scp5" style="background: var(--panel); border: 2px solid var(--line); clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px)); display: flex; flex-direction: column; transition: transform 0.18s, filter 0.18s, border-color 0.18s;">
+        <div data-dc-tpl="149" style="position: relative; aspect-ratio: 16 / 10; background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px); border-bottom: 2px solid var(--line); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <span data-dc-tpl="150" style="position: absolute; top: 10px; left: 12px; font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); text-shadow: 0 0 8px var(--glow);">STAGE 05</span>
+          <div data-dc-tpl="151" style="width: 4px; height: 4px; box-shadow: var(--sprite-sm); opacity: 0.5; transform: scale(1.4);"></div>
+        </div>
+        <div data-dc-tpl="152" style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1 1 0%;">
+          <h3 data-dc-tpl="153" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: 13px; line-height: 1.55; color: var(--ink);">DEVOPS DASHBOARD</h3>
+          <p data-dc-tpl="154" style="margin: 0px; font-family: VT323; font-size: 19px; line-height: 1.22; color: var(--muted);">Cluster health, deploy pipelines, and cost insights unified in a single pane.</p>
+          <div data-dc-tpl="155" style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto;"><span data-dc-tpl="156" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">REACT</span><span data-dc-tpl="157" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">GO</span><span data-dc-tpl="158" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">K8S</span></div>
+          <div data-dc-tpl="159" style="display: flex; gap: 18px; border-top: 2px solid var(--line); padding-top: 14px;"><a data-dc-tpl="160" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">▶ DEMO</a><a data-dc-tpl="161" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">&lt;/&gt; CODE</a></div>
+        </div>
+      </article>
+
+      <article data-dc-tpl="162" class="scp5" style="background: var(--panel); border: 2px solid var(--line); clip-path: polygon(0px 8px, 8px 0px, calc(100% - 8px) 0px, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0px calc(100% - 8px)); display: flex; flex-direction: column; transition: transform 0.18s, filter 0.18s, border-color 0.18s;">
+        <div data-dc-tpl="163" style="position: relative; aspect-ratio: 16 / 10; background: repeating-linear-gradient(45deg, rgb(12, 22, 38) 0px, rgb(12, 22, 38) 8px, rgb(10, 18, 32) 8px, rgb(10, 18, 32) 16px); border-bottom: 2px solid var(--line); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <span data-dc-tpl="164" style="position: absolute; top: 10px; left: 12px; font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--glow); text-shadow: 0 0 8px var(--glow);">STAGE 06</span>
+          <div data-dc-tpl="165" style="width: 4px; height: 4px; box-shadow: var(--sprite-sm); opacity: 0.5; transform: scale(1.4);"></div>
+        </div>
+        <div data-dc-tpl="166" style="padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1 1 0%;">
+          <h3 data-dc-tpl="167" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: 13px; line-height: 1.55; color: var(--ink);">OPEN SOURCE CLI</h3>
+          <p data-dc-tpl="168" style="margin: 0px; font-family: VT323; font-size: 19px; line-height: 1.22; color: var(--muted);">Developer tool with 2k+ stars for scaffolding production-ready microservices.</p>
+          <div data-dc-tpl="169" style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto;"><span data-dc-tpl="170" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">GO</span><span data-dc-tpl="171" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">COBRA</span><span data-dc-tpl="172" style="font-family: &quot;Press Start 2P&quot;; font-size: 8px; color: var(--glow); border: 1px solid var(--line); padding: 6px 8px;">OSS</span></div>
+          <div data-dc-tpl="173" style="display: flex; gap: 18px; border-top: 2px solid var(--line); padding-top: 14px;"><a data-dc-tpl="174" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">▶ DEMO</a><a data-dc-tpl="175" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp6" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--ink); text-decoration: none; transition: color 0.15s;">&lt;/&gt; CODE</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section data-dc-tpl="176" id="resume" style="position: relative; z-index: 1; max-width: 760px; margin: 0px auto; padding: 30px 22px 100px; text-align: center; scroll-margin-top: 70px;">
+    <div data-dc-tpl="177" style="background: var(--panel); border: 2px solid var(--glow); clip-path: polygon(0px 10px, 10px 0px, calc(100% - 10px) 0px, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0px calc(100% - 10px)); padding: 54px 30px; display: flex; flex-direction: column; align-items: center; gap: 24px; filter: drop-shadow(0 0 calc(20px*var(--glowmul)) var(--glow));">
+      <h2 data-dc-tpl="178" style="margin: 0px; font-family: &quot;Press Start 2P&quot;; font-size: clamp(16px, 3.6vw, 24px); line-height: 1.4; color: var(--ink); text-shadow: 0 0 calc(14px*var(--glowmul)) var(--glow);">READY PLAYER ONE?</h2>
+      <p data-dc-tpl="179" style="margin: 0px; font-family: VT323; font-size: 23px; color: var(--muted);">Grab my resume and let's team up for the next mission.</p>
+      <a data-dc-tpl="180" href="file:///home/seph08/Downloads/resume.pdf" download="" class="scp7 scp8" style="display: inline-flex; align-items: center; gap: 12px; font-family: &quot;Press Start 2P&quot;; font-size: 13px; color: rgb(5, 7, 13); background: var(--glow); padding: 20px 26px; text-decoration: none; clip-path: polygon(0px 6px, 6px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0px calc(100% - 6px)); box-shadow: 7px 7px 0 0 var(--glow2); transition: transform 0.08s, box-shadow 0.08s;">⬇ DOWNLOAD_RESUME.PDF</a>
+      <div data-dc-tpl="181" style="display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; margin-top: 6px;">
+        <a data-dc-tpl="182" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp0" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--ink); text-decoration: none; transition: color 0.15s, text-shadow 0.15s;">GITHUB</a>
+        <a data-dc-tpl="183" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp0" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--ink); text-decoration: none; transition: color 0.15s, text-shadow 0.15s;">LINKEDIN</a>
+        <a data-dc-tpl="184" href="file:///home/seph08/Downloads/Pixel%20Portfolio%20(standalone).html#" class="scp0" style="font-family: &quot;Press Start 2P&quot;; font-size: 10px; color: var(--ink); text-decoration: none; transition: color 0.15s, text-shadow 0.15s;">EMAIL</a>
+      </div>
+    </div>
+  </section>
+
+  <div data-dc-tpl="185" style="overflow: hidden; border-top: 2px solid var(--line); border-bottom: 2px solid var(--line); background: var(--panel); padding: 11px 0px;">
+    <div data-dc-tpl="186" style="display: flex; width: max-content; animation: 24s linear 0s infinite normal none running marquee; font-family: &quot;Press Start 2P&quot;; font-size: 11px; color: var(--glow);">
+      <span data-dc-tpl="187" style="padding: 0px 28px; white-space: nowrap;">INSERT COIN ◆ PRESS START ◆ GAME OVER? CONTINUE? ◆ FULLSTACK ENGINEER ◆&nbsp;</span>
+      <span data-dc-tpl="188" style="padding: 0px 28px; white-space: nowrap;">INSERT COIN ◆ PRESS START ◆ GAME OVER? CONTINUE? ◆ FULLSTACK ENGINEER ◆&nbsp;</span>
+    </div>
+  </div>
+
+  <footer data-dc-tpl="189" style="position: relative; z-index: 1; text-align: center; padding: 34px 22px 46px;">
+    <span data-dc-tpl="190" style="font-family: &quot;Press Start 2P&quot;; font-size: 9px; color: var(--muted); line-height: 1.8;">© 2026 YOUR_NAME — BUILT WITH PIXELS</span>
+  </footer>
+
+  <div data-dc-tpl="191" style="position: fixed; inset: 0px; z-index: 60; pointer-events: none; background: repeating-linear-gradient(rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0.3) 2px, rgba(0, 0, 0, 0.3) 4px) 0% 0% / 100% 4px; mix-blend-mode: multiply; animation: 0.5s steps(2) 0s infinite normal none running drift, 4s ease 0s infinite normal none running flicker; display: block;"></div>
+  <div data-dc-tpl="192" style="position: fixed; inset: 0px; z-index: 59; pointer-events: none; background: radial-gradient(transparent 52%, rgba(0, 0, 0, 0.6) 100%);"></div></div></div></div>
+<script type="text/x-dc" data-dc-script="" data-props="{
+  &quot;theme&quot;: {&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Cyan Arcade&quot;,&quot;Synthwave&quot;,&quot;GameBoy&quot;],&quot;default&quot;:&quot;Cyan Arcade&quot;,&quot;tsType&quot;:&quot;string&quot;},
+  &quot;scanlines&quot;: {&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},
+  &quot;glowStrength&quot;: {&quot;editor&quot;:&quot;float&quot;,&quot;default&quot;:1,&quot;min&quot;:0,&quot;max&quot;:2,&quot;step&quot;:0.1,&quot;tsType&quot;:&quot;number&quot;}
+}">
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  scoreRef = React.createRef();
+  scanRef = React.createRef();
+
+  PALETTES = {
+    "Cyan Arcade": {glow:"#35e7ff",glow2:"#2b6bff",bg:"#05070d",panel:"#0b1320",ink:"#d6f3ff",muted:"#6f93a8",line:"rgba(53,231,255,.18)"},
+    "Synthwave":   {glow:"#ff4fd8",glow2:"#7b5cff",bg:"#0c0617",panel:"#170a28",ink:"#f6dcff",muted:"#a07fb6",line:"rgba(255,79,216,.18)"},
+    "GameBoy":     {glow:"#9bea4f",glow2:"#3fae5f",bg:"#0a1408",panel:"#0f1d0c",ink:"#e3ffce",muted:"#7c9c68",line:"rgba(155,234,79,.18)"},
+  };
+
+  buildSprite(px) {
+    const map = ["00100000100","00010001000","00111111100","01101110110","11111111111","10111111101","10100000101","00011011000"];
+    const p = [];
+    for (let y = 0; y < map.length; y++)
+      for (let x = 0; x < map[y].length; x++)
+        if (map[y][x] === "1") p.push(`${x*px}px ${y*px}px 0 0 var(--glow)`);
+    return p.join(",");
+  }
+
+  applyTheme() {
+    const r = this.rootRef.current;
+    if (!r) return;
+    const pal = this.PALETTES[this.props.theme] || this.PALETTES["Cyan Arcade"];
+    Object.entries(pal).forEach(([k, v]) => r.style.setProperty("--" + k, v));
+    r.style.setProperty("--glowmul", this.props.glowStrength ?? 1);
+    r.style.setProperty("--sprite", this.buildSprite(7));
+    r.style.setProperty("--sprite-sm", this.buildSprite(4));
+    if (this.scanRef.current)
+      this.scanRef.current.style.display = (this.props.scanlines ?? true) ? "block" : "none";
+  }
+
+  componentDidMount() {
+    this.applyTheme();
+    this._score = 13370;
+    this._t = setInterval(() => {
+      this._score += 10;
+      if (this.scoreRef.current)
+        this.scoreRef.current.textContent = String(this._score).padStart(8, "0");
+    }, 900);
+  }
+
+  componentDidUpdate() { this.applyTheme(); }
+  componentWillUnmount() { clearInterval(this._t); }
+
+  renderVals() {
+    return { rootRef: this.rootRef, scoreRef: this.scoreRef, scanRef: this.scanRef };
+  }
+}
+</script>
+
+
+</body></html>
