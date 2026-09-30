@@ -727,3 +727,65 @@ html {
   pointer-events: none;
   background: radial-gradient(transparent 52%, rgba(0, 0, 0, 0.6) 100%);
 }
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.loader-frame {
+  display: flex;
+  gap: 8px;
+  height: 28px;
+  align-items: center;
+}
+
+.pixel {
+  width: 12px;
+  height: 28px;
+  background: var(--glow);
+  image-rendering: pixelated;
+  box-shadow: 0 0 calc(8px * var(--glowmul)) var(--glow);
+  animation: loader-load 1.2s ease-in-out infinite;
+}
+
+.pixel:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.pixel:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.pixel:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+.pixel:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+@keyframes loader-load {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.loader-error {
+  font-family: 'Press Start 2P';
+  font-size: 10px;
+  color: var(--glow);
+  text-shadow: 0 0 calc(8px * var(--glowmul)) var(--glow);
+  line-height: 1.8;
+  padding: 0 20px;
+  text-align: center;
+}
