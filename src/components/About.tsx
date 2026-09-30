@@ -1,24 +1,12 @@
-const STATS = [
-  { label: 'BACKEND', level: 'Lv.9', width: '94%' },
-  { label: 'FRONTEND', level: 'Lv.8', width: '85%' },
-  { label: 'DEVOPS', level: 'Lv.7', width: '72%' },
-  { label: 'DATABASES', level: 'Lv.8', width: '80%' },
-]
-
-const SKILLS = [
-  'JAVA',
-  'GO',
-  'PYTHON',
-  'REACT',
-  'TYPESCRIPT',
-  'POSTGRES',
-  'DOCKER',
-  'KUBERNETES',
-  'REDIS',
-  'gRPC',
-]
+import { useConfig } from './config-context'
 
 export function About() {
+  const { config, isLoading } = useConfig()
+
+  if (isLoading || !config) {
+    return null
+  }
+
   return (
     <section className="section" id="about">
       <div className="section-head">
@@ -57,7 +45,7 @@ export function About() {
 
           <div className="block">
             <span className="block-label">▸ STATS</span>
-            {STATS.map((stat) => (
+            {config.stats.map((stat) => (
               <div className="stat-row" key={stat.label}>
                 <span className="stat-label">{stat.label}</span>
                 <div className="stat-bar">
@@ -71,7 +59,7 @@ export function About() {
           <div className="block">
             <span className="block-label">▸ INVENTORY</span>
             <div className="skills">
-              {SKILLS.map((skill) => (
+              {config.inventory.map((skill) => (
                 <span className="skill" key={skill}>
                   {skill}
                 </span>

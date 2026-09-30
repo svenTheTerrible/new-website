@@ -1,4 +1,12 @@
+import { useConfig } from './config-context'
+
 export function Resume() {
+  const { config, isLoading } = useConfig()
+
+  if (isLoading || !config) {
+    return null
+  }
+
   return (
     <section className="resume-section" id="resume">
       <div className="resume-card">
@@ -10,13 +18,13 @@ export function Resume() {
           ⬇ DOWNLOAD_RESUME.PDF
         </a>
         <div className="social-links">
-          <a href="#" className="nav-link">
+          <a href={config.socials.github} className="nav-link">
             GITHUB
           </a>
-          <a href="#" className="nav-link">
+          <a href={config.socials.linkedin} className="nav-link">
             LINKEDIN
           </a>
-          <a href="#" className="nav-link">
+          <a href={config.socials.email} className="nav-link">
             EMAIL
           </a>
         </div>
