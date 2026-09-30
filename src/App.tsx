@@ -7,7 +7,24 @@ import { Marquee } from './components/Marquee'
 import { Scanlines } from './components/Scanlines'
 import { ThemeHost } from './components/ThemeHost'
 import { ConfigProvider } from './components/ConfigProvider'
+import { useConfig } from './components/config-context'
 import './styles/portfolio.css'
+
+function SiteFooter({ year }: { year: number }) {
+  const { config } = useConfig()
+
+  if (!config) {
+    return null
+  }
+
+  return (
+    <footer className="site-footer">
+      <span className="footer-text">
+        © {year} {config.name} — BUILT WITH PIXELS
+      </span>
+    </footer>
+  )
+}
 
 export default function App() {
   const currentYear = new Date().getFullYear()
@@ -23,13 +40,9 @@ export default function App() {
           <Resume />
           <Marquee />
         </ThemeHost>
+        <Scanlines />
+        <SiteFooter year={currentYear} />
       </ConfigProvider>
-      <Scanlines />
-      <footer className="site-footer">
-        <span className="footer-text">
-          © {currentYear} SVEN STAFFL — BUILT WITH PIXELS
-        </span>
-      </footer>
     </>
   )
 }
