@@ -14,7 +14,7 @@ export function Resume() {
         <p className="resume-sub">
           Grab my resume and let&apos;s team up for the next mission.
         </p>
-        <a href="/resume.pdf" download className="btn-primary btn-lg">
+        <a href="/custom/resume.pdf" download className="btn-primary btn-lg">
           ⬇ DOWNLOAD_RESUME.PDF
         </a>
         <div className="social-links">
