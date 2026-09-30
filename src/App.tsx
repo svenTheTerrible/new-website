@@ -6,6 +6,7 @@ import { Resume } from './components/Resume'
 import { Marquee } from './components/Marquee'
 import { Scanlines } from './components/Scanlines'
 import { ThemeHost } from './components/ThemeHost'
+import { ConfigProvider } from './components/ConfigProvider'
 import './styles/portfolio.css'
 
 export default function App() {
@@ -13,14 +14,16 @@ export default function App() {
 
   return (
     <>
-      <ThemeHost>
-        <Header />
-        <Hero />
-        <About />
-        <Projects />
-        <Resume />
-        <Marquee />
-      </ThemeHost>
+      <ConfigProvider>
+        <ThemeHost>
+          <Header />
+          <Hero />
+          <About />
+          <Projects />
+          <Resume />
+          <Marquee />
+        </ThemeHost>
+      </ConfigProvider>
       <Scanlines />
       <footer className="site-footer">
         <span className="footer-text">
