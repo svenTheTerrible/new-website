@@ -8,7 +8,7 @@ export function ConfigProvider({ children }: { children: React.ReactNode }) {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/config.json')
+    fetch('/custom/config.json')
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Failed to load config (${response.status})`)
