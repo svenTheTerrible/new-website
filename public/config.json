@@ -57,9 +57,8 @@
       "tags": ["GO", "COBRA", "OSS"]
     }
   ],
-  "socials": {
-    "github": "#",
-    "linkedin": "#",
-    "email": "#"
-  }
+  "socials": [
+    { "label": "GITHUB", "url": "#" },
+    { "label": "EMAIL", "url": "#" }
+  ]
 }

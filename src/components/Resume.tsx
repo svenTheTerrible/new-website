@@ -18,15 +18,11 @@ export function Resume() {
           ⬇ DOWNLOAD_RESUME.PDF
         </a>
         <div className="social-links">
-          <a href={config.socials.github} className="nav-link">
-            GITHUB
-          </a>
-          <a href={config.socials.linkedin} className="nav-link">
-            LINKEDIN
-          </a>
-          <a href={config.socials.email} className="nav-link">
-            EMAIL
-          </a>
+          {config.socials.map((link, index) => (
+            <a href={link.url} key={index} className="nav-link">
+              {link.label}
+            </a>
+          ))}
         </div>
       </div>
     </section>

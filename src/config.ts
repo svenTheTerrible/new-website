@@ -11,10 +11,9 @@ export interface Project {
   tags: string[]
 }
 
-export interface SocialLinks {
-  github: string
-  linkedin: string
-  email: string
+export interface SocialLink {
+  label: string
+  url: string
 }
 
 export interface SiteConfig {
@@ -23,7 +22,7 @@ export interface SiteConfig {
   stats: Stat[]
   inventory: string[]
   projects: Project[]
-  socials: SocialLinks
+  socials: SocialLink[]
 }
 
 export interface ConfigContextValue {
