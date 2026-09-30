@@ -1,0 +1,65 @@
+{
+  "name": "PHASEZERO",
+  "stack": ["Java", "Go", "Python", "React", "TypeScript"],
+  "stats": [
+    { "label": "BACKEND", "level": "Lv.9", "width": "94%" },
+    { "label": "FRONTEND", "level": "Lv.8", "width": "85%" },
+    { "label": "DEVOPS", "level": "Lv.7", "width": "72%" },
+    { "label": "DATABASES", "level": "Lv.8", "width": "80%" }
+  ],
+  "inventory": [
+    "JAVA",
+    "GO",
+    "PYTHON",
+    "REACT",
+    "TYPESCRIPT",
+    "POSTGRES",
+    "DOCKER",
+    "KUBERNETES",
+    "REDIS",
+    "gRPC"
+  ],
+  "projects": [
+    {
+      "stage": "01",
+      "title": "DISTRIBUTED TASK QUEUE",
+      "description": "High-throughput job scheduler processing 50k tasks/sec with at-least-once delivery.",
+      "tags": ["GO", "gRPC", "REDIS"]
+    },
+    {
+      "stage": "02",
+      "title": "REALTIME CHAT",
+      "description": "Low-latency messaging with presence, typing indicators, and offline sync.",
+      "tags": ["TYPESCRIPT", "REACT", "WS"]
+    },
+    {
+      "stage": "03",
+      "title": "PAYMENTS API",
+      "description": "PCI-aware payment orchestration with idempotent retries and double-entry ledgering.",
+      "tags": ["JAVA", "SPRING", "POSTGRES"]
+    },
+    {
+      "stage": "04",
+      "title": "ML FEATURE STORE",
+      "description": "Online/offline feature serving with point-in-time correctness and low-latency reads.",
+      "tags": ["PYTHON", "FASTAPI", "KAFKA"]
+    },
+    {
+      "stage": "05",
+      "title": "DEVOPS DASHBOARD",
+      "description": "Cluster health, deploy pipelines, and cost insights unified in a single pane.",
+      "tags": ["REACT", "GO", "K8S"]
+    },
+    {
+      "stage": "06",
+      "title": "OPEN SOURCE CLI",
+      "description": "Developer tool with 2k+ stars for scaffolding production-ready microservices.",
+      "tags": ["GO", "COBRA", "OSS"]
+    }
+  ],
+  "socials": {
+    "github": "#",
+    "linkedin": "#",
+    "email": "#"
+  }
+}
