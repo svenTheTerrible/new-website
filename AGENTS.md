@@ -5,12 +5,16 @@ Guidance for AI agents working in this repo. Keep changes consistent with the no
 ## Stack
 - Vite 8 (Rolldown-based) + React 19 + TypeScript ~6.0, ESM (`"type": "module"`).
 - Entry: `index.html` → `src/main.tsx` → `src/App.tsx`. Static files live in `public/`; imported assets live in `src/assets/`.
+- Config-driven: site content (name, projects, stats, socials) loads at runtime from `public/custom/config.json`. Edit that file to change site content, not component code.
 
 ## Commands
-- Dev server (HMR): `npm run start` — note the script is `start`, not `dev`.
+- Dev server (HMR): `npm run start` — note the script is `start`, not `dev`. Type errors appear in the terminal via `vite-plugin-checker`.
 - Type-check + build: `npm run build` (`tsc -b && vite build`). Output goes to `dist/`.
-- Lint: `npm run lint` (`eslint .`).
+- Lint: `npm run lint` (`eslint .`). Also validates Prettier formatting via `eslint-plugin-prettier`.
+- Fix lint/format: `npm run lint:fix`.
+- Format all: `npm run format` (`prettier --write .`). Check only: `npm run format:check`.
 - Preview a production build: `npm run preview`.
+- Docker build: `docker build -t new-website .` — produces a two-stage nginx image from the static `dist/` output.
 
 ## Verification (no test framework)
 There is no test runner and no `test` script. Do not assume one exists or add one unprompted. To verify a change, run both:
