@@ -19,6 +19,10 @@
     "REDIS",
     "gRPC"
   ],
+  "aboutMe": {
+    "text1": "I'm a fullstack engineer who ships resilient backends in Java, Go & Python and crafts fast, fully-typed frontends in React + TypeScript. I like clean APIs, observable systems, and interfaces that feel instant.",
+    "text2": "From distributed queues to realtime UIs — I take features from schema to ship. Currently leveling up and looking for the next co-op."
+  },
   "projects": [
     {
       "stage": "01",

@@ -23,23 +23,15 @@ export function About() {
           <div className="player-name">
             PLAYER 01
             <br />
-            <span className="player-sub">YOUR NAME</span>
+            <span className="player-sub">{config.name}</span>
           </div>
         </div>
 
         <div className="about-text-col">
           <div className="block">
-            <p className="about-para">
-              I&apos;m a fullstack engineer who ships resilient backends in{' '}
-              <b style={{ color: 'var(--glow)' }}>Java, Go &amp; Python</b> and
-              crafts fast, fully-typed frontends in{' '}
-              <b style={{ color: 'var(--glow)' }}>React + TypeScript</b>. I like
-              clean APIs, observable systems, and interfaces that feel instant.
-            </p>
+            <p className="about-para">{config.aboutMe.text1}</p>
             <p className="about-para" style={{ color: 'var(--muted)' }}>
-              From distributed queues to realtime UIs — I take features from
-              schema to ship. Currently leveling up and looking for the next
-              co-op.
+              {config.aboutMe.text2}
             </p>
           </div>
 

@@ -18,6 +18,11 @@ export interface SocialLink {
   url: string
 }
 
+interface AboutMe {
+  text1: string
+  text2: string
+}
+
 export interface SiteConfig {
   name: string
   stack: string[]
@@ -25,6 +30,7 @@ export interface SiteConfig {
   inventory: string[]
   projects: Project[]
   socials: SocialLink[]
+  aboutMe: AboutMe
 }
 
 export interface ConfigContextValue {
