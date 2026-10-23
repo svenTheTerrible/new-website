@@ -17,8 +17,17 @@ export function About() {
       <div className="about-grid">
         <div className="about-photo-col">
           <div className="photo-frame">
-            <span className="photo-pixel" />
-            <span className="photo-tag">DROP_PHOTO.PNG</span>
+            <span className="photo-tag">
+              <video
+                style={{ width: 190, height: 190 }}
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src="/custom/profile.webm" type="video/webm" />
+              </video>
+            </span>
           </div>
           <div className="player-name">
             PLAYER 01
